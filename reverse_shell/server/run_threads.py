@@ -4,9 +4,12 @@ import time
 from queue import Queue
 import sys
 
+
+import prompt
 import server
 
-PORT=9990
+
+PORT=9999
 HOST=""
 MAX_BAD_CONNECTIONS=5
 NUMBER_OF_THREADS=2
@@ -31,7 +34,7 @@ def worker():
 			server.bind_socket()
 			server.accept_client_connection()
 		elif task_ID==2:
-			server.start_myShell()
+			prompt.start_myShell()
 
 		queue.task_done()
 
