@@ -4,7 +4,7 @@ import subprocess
 
 BUFFER_SIZE=1024
 
-HOST="192.168.29.232"
+HOST="0.0.0.0"
 PORT=9990
 
 #Creating client socket
