@@ -6,7 +6,7 @@ import sys
 import os,signal
 
 
-PORT=9990
+PORT=9999
 HOST=""
 MAX_BAD_CONNECTIONS=5
 NUMBER_OF_THREADS=2
@@ -80,6 +80,7 @@ def accept_client_connection():
             addresses.append(address)
 
             print("Connection has been established : " + address[0])
+            print("\n(use 'quit' to quit)")
 
         except:
             print("Failed to establish connection..")
